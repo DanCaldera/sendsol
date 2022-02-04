@@ -22,14 +22,3 @@ export default function PricingPage({ products }) {
     </Background>
   );
 }
-
-// export async function getStaticProps() {
-//   const products = await getActiveProductsWithPrices();
-
-//   return {
-//     props: {
-//       products
-//     },
-//     revalidate: 60
-//   };
-// }
