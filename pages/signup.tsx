@@ -63,13 +63,13 @@ const SignIn = () => {
               <img
                 className="mx-auto h-60 w-auto"
                 src={'images/logo/A-02-02.png'}
-                alt="Lets Raise"
+                alt="SendSol"
               />
             ) : (
               <img
                 className="mx-auto h-60 w-auto"
                 src={'images/logo/A-03.png'}
-                alt="Lets Raise"
+                alt="SendSol"
               />
             )}
           </Link>

@@ -3,12 +3,12 @@ const Logo = ({ className = '', ...props }) => (
     <img
       className="block lg:hidden h-12 w-auto"
       src={'images/logo/A-03-logo.png'}
-      alt="Lets Raise Logo"
+      alt="Send Logo"
     />
     <img
       className="hidden lg:block h-12 w-auto"
       src={'images/logo/A-03-logo.png'}
-      alt="Lets Raise Logo"
+      alt="Send Logo"
     />
   </div>
 );
