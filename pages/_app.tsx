@@ -6,6 +6,7 @@ import { UserContextProvider } from '@/utils/useUser';
 import { useRouter } from 'next/router';
 import nprogress from 'nprogress';
 import { useEffect } from 'react';
+import { Toaster } from 'react-hot-toast';
 
 export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -31,10 +32,13 @@ export default function MyApp({ Component, pageProps }) {
   }, [router]);
 
   return (
-    <ThemeProvider>
-      <UserContextProvider>
-        <Component {...pageProps} />
-      </UserContextProvider>
-    </ThemeProvider>
+    <>
+      <Toaster />
+      <ThemeProvider>
+        <UserContextProvider>
+          <Component {...pageProps} />
+        </UserContextProvider>
+      </ThemeProvider>
+    </>
   );
 }

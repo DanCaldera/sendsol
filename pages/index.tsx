@@ -1,4 +1,5 @@
 import Background from '@/components/Background';
+import Hero from '@/components/Hero';
 import Footer from '@/components/home-ui/Footer';
 import Meta from '@/components/Meta';
 import { useUser } from '@/utils/useUser';
@@ -18,6 +19,7 @@ export default function PricingPage({ products }) {
   return (
     <Background>
       <Meta />
+      <Hero />
       <Footer />
     </Background>
   );

@@ -30,13 +30,10 @@ export const UserContextProvider = (props) => {
 
   useEffect(() => {
     if (user) {
-      Promise.allSettled([getUserDetails()]).then(
-        (results: any) => {
-          setUserDetails(results[0].value.data);
-          setSubscription(results[1].value.data);
-          setUserLoaded(true);
-        }
-      );
+      Promise.allSettled([getUserDetails()]).then((results: any) => {
+        setUserDetails(results[0].value.data);
+        setUserLoaded(true);
+      });
     }
   }, [user]);
 

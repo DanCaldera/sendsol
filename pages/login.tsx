@@ -33,7 +33,7 @@ const SignIn = () => {
       toast.error('Email already in the waitlist');
     }
 
-    if (data && data.length && data[0].temporarily_enabled) {
+    if (data && data.length && data[0].enabled) {
       const { error } = await signIn({ email });
 
       if (error) {
@@ -59,7 +59,7 @@ const SignIn = () => {
 
   return (
     <Background>
-      <div className="min-h-screen bg-green-500 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+      <div className="min-h-screen bg-cyan-500 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <Meta title="Sign In" />
         <Toaster />
         <h2
@@ -69,7 +69,7 @@ const SignIn = () => {
           Sign in to SendSol
         </h2>
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-          <div className="bg-green-50 py-8 px-4 shadow sm:rounded-lg sm:px-10">
+          <div className="bg-cyan-50 py-8 px-4 shadow sm:rounded-lg sm:px-10">
             <form onSubmit={handleSignin} className="space-y-6">
               <div className="mt-1 relative rounded-md shadow-sm">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -82,7 +82,7 @@ const SignIn = () => {
                   type="email"
                   value={email}
                   onChange={setEmail}
-                  className="focus:ring-green-500 focus:border-green-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md"
+                  className="focus:ring-cyan-500 focus:border-cyan-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md"
                   placeholder="you@example.com"
                 />
               </div>
@@ -91,7 +91,7 @@ const SignIn = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
                 >
                   Send magic-link
                   {loading && (
