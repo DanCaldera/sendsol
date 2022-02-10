@@ -114,9 +114,7 @@ const Hero = () => {
                     src="/og.png"
                     alt="ss logo"
                   />
-                  <p className="text-2xl font-medium text-cyan-500">
-                    SendSolana
-                  </p>
+                  <p className="text-2xl font-medium text-cyan-500">SendSol</p>
                 </span>
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500">
@@ -171,7 +169,7 @@ const Hero = () => {
                       alt="ss logo"
                     />
                     <p className="text-2xl font-medium text-cyan-500">
-                      SendSolana
+                      SendSol
                     </p>
                   </div>
                   <div className="-mr-2">
